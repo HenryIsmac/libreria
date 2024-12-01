@@ -13,6 +13,8 @@ public class ClienteDAOPrincipal {
 		List<Cliente> clientes = clienteDAO.findAll();
 		for (Cliente cliente : clientes) {
 			System.out.println(cliente.toString());
+		
+		
 		}
 		context.close();
 	}
