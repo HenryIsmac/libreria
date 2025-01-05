@@ -12,6 +12,7 @@
 	<table>
 		<thead>
 			<tr>
+			
 				<th>idCategoria</th>
 				<th>categoria</th>
 				<th>descripcion</th>
