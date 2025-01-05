@@ -15,6 +15,7 @@ clientes-listar
 	<table>
 		<thead>
 			<tr>
+			
 				<th>idCliente</th>
 				<th>cedula</th>
 				<th>nombre</th>
