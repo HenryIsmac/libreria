@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="a" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,34 +8,36 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Clientes</h1>
+	<h1>Autores</h1>
 	<table>
 		<thead>
 			<tr>
-			
-				<th>idCliente</th>
-				<th>cedula</th>
+				<th>idAutor</th>
 				<th>nombre</th>
 				<th>apellido</th>
+				<th>pais</th>
 				<th>direccion</th>
 				<th>telefono</th>
 				<th>correo</th>
 			</tr>
 		</thead>
 		<tbody>
-			<c:forEach var="item" items="${clientes}">
+			<a:forEach var="item" items="${autores}">
 				<tr>
-					<td>${item.idCliente}</td>
-					<td>${item.cedula}</td>
+					<td>${item.idAutor}</td>
 					<td>${item.nombre}</td>
 					<td>${item.apellido}</td>
+					<td>${item.pais}</td>
 					<td>${item.direccion}</td>
 					<td>${item.telefono}</td>
 					<td>${item.correo}</td>
 				</tr>
-			</c:forEach>
+			</a:forEach>
 		</tbody>
 	</table>
 </body>
 </html>
+
+
+
 
